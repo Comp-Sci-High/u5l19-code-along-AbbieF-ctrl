@@ -57,6 +57,7 @@
             </div>
             <p><strong>Comment:</strong> <%= ratings[i].comment %></p>
             <p><em>By: <%= ratings[i].username %></em></p>
+            <button onclick="deleteRating('<%= rating[i].username %>')">Delete</button>
           </div>
         </div>
       <% } %>

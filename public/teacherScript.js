@@ -22,3 +22,7 @@ form.addEventListener("submit", async (e) => {
 // write the async function deleteTeacher
 // make sure it redirects to / after
 
+async function deleteTeacher() {
+    await fetch('/delete/teacher/:' + _id, {method: 'DELETE'})
+    window.location.href = '/'
+}
